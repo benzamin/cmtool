@@ -1,0 +1,11 @@
+
+Update to WS_Desktop
+>SimpleAjaxUploader.js
+>Upload.php
+>index.php
+>css/style.css
+> get.php
+> dbConfig
+> Javascript + css folder
+
+> MD5 for passwords
