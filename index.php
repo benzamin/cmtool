@@ -318,7 +318,7 @@ if($is_logged_in)
               </button>
 
               <a class="navbar-brand" href="#">
-                <img style="max-width:29px; margin-top: -4px;" src="images/w-logo.png">
+                <img style="max-width:29px; margin-top: -4px;" src="images/file.png">
               </a>
               <a class="navbar-brand" href="#">FileCatalog</a>
           </div>
