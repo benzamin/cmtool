@@ -320,7 +320,7 @@ if($is_logged_in)
               <a class="navbar-brand" href="#">
                 <img style="max-width:29px; margin-top: -4px;" src="images/w-logo.png">
               </a>
-              <a class="navbar-brand" href="#">CMTool</a>
+              <a class="navbar-brand" href="#">FileCatalog</a>
           </div>
           <!-- Navbar links -->
           <div class="collapse navbar-collapse" id="navbar">
@@ -398,7 +398,7 @@ if($is_logged_in)
       <div class="small-print">
         <div class="container">
           <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="http://www.widespace.com">Contact</a></p>
-          <p>Copyright &copy; Widespace.com 2016. With love from <a href="https://github.com/benzamin">Ben</a>.  </p>
+          <p>Copyright &copy; Info, 2016. With love from <a href="https://github.com/benzamin">Ben</a>.  </p>
         </div>
       </div>
 </footer>

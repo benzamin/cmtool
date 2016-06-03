@@ -60,6 +60,7 @@ if($is_logged_in)
 
       var uploadedFiles = '';
       var failedFiles = '';
+      var allowd_file_types = [<?php echo '"'.implode('","',  $ALLOWED_FILE_TYPES ).'"' ?>];
 
       var uploader = new ss.SimpleUpload({
             button: [btn, dragBoxInput],
@@ -73,7 +74,7 @@ if($is_logged_in)
             multiple: true,
             //autoSubmit: false,
             debug: true,
-            allowedExtensions: ['rar', 'tar.gz', 'tar', 'zip'], // for example, if we were uploading pics
+            allowedExtensions: allowd_file_types,
             hoverClass: 'ui-state-hover',
             focusClass: 'ui-state-focus',
             disabledClass: 'ui-state-disabled',
@@ -87,10 +88,10 @@ if($is_logged_in)
               var ddl = document.getElementById("selectCountry");
               var selectedValue = ddl.options[ddl.selectedIndex].value;
               if (selectedValue == "select"){
-                  showError("Please select a country First!");
+                  showError("Please select a catagory First!");
                   swal(
                     'Ooops!',
-                    'Please select Country First!',
+                    'Please select Category First!',
                     'warning'
                   );
                   showMessage('');
@@ -253,7 +254,7 @@ if($is_logged_in)
               <a class="navbar-brand" href="#">
                 <img style="max-width:29px; margin-top: -4px;" src="images/w-logo.png">
               </a>
-              <a class="navbar-brand" href="#">CMTool</a>
+              <a class="navbar-brand" href="#">FileCatalog</a>
           </div>
           <!-- Navbar links -->
           <div class="collapse navbar-collapse" id="navbar">
@@ -296,14 +297,14 @@ if($is_logged_in)
 
 <div class="container">
   <div class="row">
-    <h4>Upload New &nbsp;&nbsp;|&nbsp;&nbsp;<small>CMTool</small> </h4>
+    <h4>Upload New &nbsp;&nbsp;|&nbsp;&nbsp;<small>FileCatalog</small> </h4>
     <br>
         <div class="form-group">
-          <label for="selectCountry">Country:</label>
+          <label for="selectCountry">Category:</label>
           <select class="form-control" id="selectCountry">
-            <option value='select'>Select Country</option>
+            <option value='select'>Select Category</option>
 <?php
-          foreach($COUNTRY_LIST as $key => $value):
+          foreach($CATEGORY_LIST as $key => $value):
           echo '<option value="'.$value.'">'.$value.'</option>'; //close your tags!!
           endforeach;
 ?>
@@ -363,7 +364,7 @@ if($is_logged_in)
       <div class="small-print">
         <div class="container">
           <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="http://www.widespace.com">Contact</a></p>
-          <p>Copyright &copy; Widespace.com 2016. With love from <a href="https://github.com/benzamin">Ben</a>.  </p>
+          <p>Copyright &copy; info 2016. With love from <a href="https://github.com/benzamin">Ben</a>.  </p>
         </div>
       </div>
 </footer>

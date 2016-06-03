@@ -91,9 +91,9 @@ echo '</div>';
 //print table headers
   echo "<table id='oseTable' class='table table-bordered table-striped table-condensed'>";
   echo "<thead><tr>";
-    echo "<th>Country</th>";
+    echo "<th>Category</th>";
     echo "<th>Name</th>";
-    echo "<th>ZIP File</th>";
+    echo "<th>File</th>";
     echo "<th>Remarks</th>";
     echo "<th>Created</th>";
     if($is_admin){
@@ -110,7 +110,7 @@ echo '</div>';
       echo "<tr id='".$row['Id']."'>";
       echo "<td>" . $row["country"] . "</td>";
       echo "<td>" . $row["osename"] . "</td>";
-      echo "<td>   <a href='" . $row["osezip"] . "'>Download Zip</a> </td>";
+      echo "<td>   <a href='" . $row["osezip"] . "'>Download File</a> </td>";
       echo "<td>" . $row["remark"] . "</td>";
       echo "<td>" . $row["createdtime"] . "</td>";
       // $isLive = strcmp($row["status"],'0');  // if 0 then both are equal

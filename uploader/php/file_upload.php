@@ -18,7 +18,7 @@ if(!is_dir($upload_dir)){
     exit(json_encode(array('success' => false, 'msg' => "Cant create directory ".$upload_dir.", please grant access or create manually.")));
   }
 }
-$valid_extensions = array( 'tar', 'rar', 'tar.gz', 'zip');
+$valid_extensions = $ALLOWED_FILE_TYPES;
 
 $uploader = new FileUpload('uploadfile');
 $fileName = $uploader->getFileName();
