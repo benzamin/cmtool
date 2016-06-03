@@ -195,7 +195,7 @@ if($is_logged_in)
             onError: function( filename, type, status, statusText, response, uploadBtn, size ) {
                 showError('Unable to upload file:' + filename);
               }
-    	});
+      });
 
       $('#submit').on('click', function( e ) {
         e.preventDefault();
@@ -276,7 +276,8 @@ if($is_logged_in)
                           <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><? echo $username ?> <span class="caret"></span></a>
                             <ul class="dropdown-menu" aria-labelledby="about-us">
-                              <li><a href="./admin/requests_admin.php">Edit Mode</a></li>
+                              <li><a href="index.php">View Mode</a></li>
+                              <li><a href="index.php?editmode=edit">Edit Mode</a></li>
                               <li><a href="./admin/logout.php">Logout</a></li>
 
                             </ul>

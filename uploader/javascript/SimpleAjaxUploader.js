@@ -1609,7 +1609,7 @@ ss.XhrUpload = {
         if ( !this._opts.multiple ) {
             total = 1;
         }
-        var fileNames = [];
+        var fileNames = '';
         for ( i = 0; i < total; i++ ) {
             filename = ss.getFilename( files[i].name );
             ext = ss.getExt( filename );
@@ -1618,7 +1618,7 @@ ss.XhrUpload = {
             if ( false === this._opts.onChange.call( this, filename, ext, this._overBtn, size, files[i] ) ) {
                 return false;
             }
-            fileNames.push(filename);
+            fileNames = fileNames + filename + ', ';
             this._queue.push({
                 id: ss.getUID(),
                 file: files[i],
@@ -1629,7 +1629,7 @@ ss.XhrUpload = {
             });
         }
 
-        if ( false === this._opts.onFileSelectDone.call( this, fileNames.join(", "), this._overBtn, this._queue.length)) {
+        if ( false === this._opts.onFileSelectDone.call( this, fileNames, this._overBtn, this._queue.length)) {
             this.clearQueue();
             return false;
         };
