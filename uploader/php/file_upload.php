@@ -14,8 +14,13 @@ $remark = $_POST['remarks'];
 $upload_dir = '../../'.UPLOAD_ROOT_DIRECTORY.'/'.$country;
 
 if(!is_dir($upload_dir)){
-  if(!mkdir($upload_dir)){
+  if(!mkdir($upload_dir, 0777, true)){
     exit(json_encode(array('success' => false, 'msg' => "Cant create directory ".$upload_dir.", please grant access or create manually.")));
+  }
+  else{
+    //change the directory accessible to current user account instead of 'root' user
+    chown($upload_dir, get_current_user());
+
   }
 }
 $valid_extensions = $ALLOWED_FILE_TYPES;
