@@ -24,18 +24,15 @@ CREATE TABLE `osedetail` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `country` varchar(1000) NOT NULL,
   `osename` varchar(1000) NOT NULL,
-  `adids` varchar(1000) NOT NULL,
   `osezip` varchar(1000) NOT NULL,
-  `screenshots` varchar(2000) NOT NULL,
   `remark` varchar(10000) NOT NULL,
   `createdtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` int(11) NOT NULL DEFAULT '0',
   `remoteaddress` varchar(100) NOT NULL,
   `user` varchar(100) NOT NULL,
   PRIMARY KEY (`Id`),
-  UNIQUE KEY `Id` (`Id`),
-  UNIQUE KEY `Id_2` (`Id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  UNIQUE KEY `Id` (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1
 
 --
 -- Table structure for table `users`

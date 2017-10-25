@@ -68,7 +68,7 @@ mysqli_autocommit($link,FALSE);
 mysqli_query($link, $query);
 $result = 0;
 if(mysqli_errno($link)){
-    //echo "Ooops, some error occured!";
+    echo mysqli_error($link);
     $result = -1;
   }
 else{

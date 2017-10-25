@@ -17,7 +17,7 @@ if($is_logged_in)
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CM Utility | Widespace</title>
+  <title>File Catalog | Redgreen.studio</title>
   <!-- Bootstrap Core CSS -->
   <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
@@ -363,7 +363,7 @@ if($is_logged_in)
 <footer>
       <div class="small-print">
         <div class="container">
-          <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="http://www.widespace.com">Contact</a></p>
+          <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="http://www.redgreen.studio">Contact</a></p>
           <p>Copyright &copy; info 2016. With love from <a href="https://github.com/benzamin">Ben</a>.  </p>
         </div>
       </div>

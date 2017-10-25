@@ -3,10 +3,10 @@
  * Database Settings
  */
 
-define('DB_SERVER'		, 'localhost');
-define('DB_USER'			, 'hackathon');
-define('DB_PASS'			, '2015');
-define('DB_NAME'			, 'cmtool');
+define('DB_SERVER'		, '127.0.0.1:3306');
+define('DB_USER'			, 'root');
+define('DB_PASS'			, 'ROOT');
+define('DB_NAME'			, 'filecatalog');
 
 //other settins
 define('ITEM_PER_PAGE', 30);
