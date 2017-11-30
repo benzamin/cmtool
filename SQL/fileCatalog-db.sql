@@ -32,7 +32,7 @@ CREATE TABLE `osedetail` (
   `user` varchar(100) NOT NULL,
   PRIMARY KEY (`Id`),
   UNIQUE KEY `Id` (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Table structure for table `users`
