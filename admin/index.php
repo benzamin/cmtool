@@ -45,7 +45,7 @@ else {
       <td>
       <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
       <tr>
-      <td colspan="3"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WMDB Admin Login </strong></td>
+      <td colspan="3"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admin Login </strong></td>
       </tr>
       <tr>
       <td width="78">Username</td>

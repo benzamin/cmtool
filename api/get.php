@@ -14,7 +14,7 @@ require("./utilities.php");
 $link = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 
 if (mysqli_connect_errno()){
-    echo "<br><br><strong>Error:</strong> Can't connect to database! Check database name, username and password are provided inside <strong>config/dbConfig.php</strong>. If database not created, create one named <strong>'filecatalog'</strong> and execute <strong>SQL/fileCatalog-db.sql</strong> inside this.";
+    echo "<br><br><strong>Error:".mysqli_connect_errno()." </strong>, Can't connect to database! Check database name, username and password are provided inside <strong>config/dbConfig.php</strong>. If database not created, create one named <strong>'filecatalog'</strong> and execute <strong>SQL/fileCatalog-db.sql</strong> inside this.";
     exit();
 }
 //ready the count query
